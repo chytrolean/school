@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  list-style: none;
+}
+body{
+  background: #fdfdfd;
+  overflow-x: hidden;
+
+}
+nav{
+  height: 12vh;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+a{
+  text-decoration: none;
+
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
