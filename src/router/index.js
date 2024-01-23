@@ -5,6 +5,8 @@ import skola from '../views/skola.vue';
 import bakalari from '../views/bakalari.vue';
 import partners from '../views/partners.vue';
 import Studium from '../views/studium.vue';
+import ucebniPlan from '../views/ucebni-plan.vue';
+import prijimacky from '../views/prijimacky.vue';
 import provoz from '../views/obory/provoz.vue';
 import ekonomika from '../views/obory/ekonomika.vue';
 import it from '../views/obory/it.vue';
@@ -15,6 +17,9 @@ import elektrikar from '../views/obory/elektrikar.vue';
 import zednik from '../views/obory/zednik.vue';
 import klempir from '../views/obory/klempir.vue';
 import nastrojar from '../views/obory/nastrojar.vue';
+import onas from '../views/onas.vue';
+import domov from '../views/domov-mladeze.vue';
+import kuchyne from '../views/kuchyne.vue';
 
 const routes = [
     {
@@ -46,6 +51,16 @@ const routes = [
         path: '/partners',
         name: 'partners',
         component: partners
+    },
+    {
+        path: '/prijimacky',
+        name: 'prijimacky',
+        component: prijimacky
+    },
+    {
+        path: '/ucebni-plan',
+        name: 'ucebniPlan',
+        component: ucebniPlan
     },
     {
         path: '/provoz-ekonomika-dopravy',
@@ -96,6 +111,21 @@ const routes = [
         path: '/nastrojar',
         name: 'nastrojar',
         component: nastrojar
+    },
+    {
+        path: '/onas',
+        name: 'onas',
+        component: onas
+    },
+    {
+        path: '/domov-mladeze',
+        name: 'domov',
+        component: domov
+    },
+    {
+        path: '/skolni-kuchyne',
+        name: 'kuchyne',
+        component: kuchyne
     },
 ];
 

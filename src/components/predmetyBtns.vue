@@ -1,11 +1,15 @@
 <template>
-  <div class="btns">
-    <div class="onas">
-        <b>O NÁS</b>
-    </div>
-    <div class="kontakt">
-        <b>KONTAKT</b>
-    </div>
+    <div class="btns">
+        <router-link to="/ucebni-plan">
+            <div class="onas">
+                <b>UČEBNÍ PLÁN</b>
+            </div>
+        </router-link>
+        <router-link to="/prijimacky" >
+            <div class="kontakt">
+                <b>INFORMACE O PŘIJÍMAČKÁCH</b>
+            </div>
+        </router-link>
   </div>
 </template>
 
@@ -17,16 +21,14 @@ export default {
 
 <style scoped>
 .btns{
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
-    justify-content: space-between;
-    gap: 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    position: absolute;
+    bottom: 0;
 }
 .onas, .kontakt{
-    width: 120px;
     height: 40px;
     display: grid;
     place-items: center;
@@ -34,9 +36,11 @@ export default {
     transition: .2s;
     font-weight: bolder;
 }
+
 .onas{
-    background: #ED1C24;
     color: #fff;
+    width: 150px;
+    background: #ED1C24;
     border: 3px solid #ED1C24;
 }
 .onas:hover{
@@ -44,7 +48,10 @@ export default {
     background: #fdfdfd;
     color: #ED1C24;
 }
+
+
 .kontakt{
+    width: 300px;
     background: #fdfdfd;
     color: #000;
     border: 3px solid black;
@@ -53,4 +60,5 @@ export default {
     background: #000;
     color: #fff;
 }
+
 </style>

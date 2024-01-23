@@ -3,7 +3,7 @@
     <li v-for="(nav, index) in navs" :key="index" :class="nav.trida">
            <router-link :to = nav.link >{{nav.name}}
             <img v-if="nav.obr" v-bind:src="nav.obrazek">
-            </router-link>
+           </router-link>
     </li>
 </ul>
 </template>

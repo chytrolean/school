@@ -79,9 +79,7 @@ img{
     
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto&display=swap');
-.all{
-    margin-top: 100px;
-}
+
 h2{
     color: #ED1C24;
 }
