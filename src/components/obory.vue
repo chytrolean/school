@@ -16,7 +16,9 @@
                 </li>
             </ul>
         </div>
+        <footer></footer>
     </div>
+
 </template>
 
 <script>
@@ -26,45 +28,45 @@ export default {
             matura: [
                 {
                     name: 'Provoz a ekonomika dopravy',
-                    link: '/studium/doprava'
+                    link: '/provoz-ekonomika-dopravy'
                 },
                 {
                     name: 'Ekonomika a podnikání',
-                    link: '/studium/ekonomika'
+                    link: '/ekonomika-podnikani'
                 },
                 {
                     name: 'Informační technologie',
-                    link: '/studium/it'
+                    link: '/it'
                 },
                 {
                     name: 'Mechanik strojů a zařízení',
-                    link: '/studium/mekanik'
+                    link: '/mechanik-stroju-a-zarizeni'
                 }
             ],
             ucnak: [
                 {
                     name: 'Kuchař - číšník',
-                    link: '/studium/kuchar'
+                    link: '/kuchar-cisnik'
                 },
                 {
                     name: 'Prodavač',
-                    link: '/studium/prodavac'
+                    link: '/prodavac'
                 },
                 {
                     name: 'Elektrikář - silnoproud',
-                    link: '/studium/elektrikar'
+                    link: '/elektrikar-silnoproud'
                 },
                 {
                     name: 'Zedník',
-                    link: '/studium/zednik'
+                    link: '/zednik'
                 },
                 {
                     name: 'Klempíř',
-                    link: '/studium/klempir'
+                    link: '/klempir'
                 },
                 {
                     name: 'Nástrojář',
-                    link: '/studium/nastrojar'
+                    link: '/nastrojar'
                 },
             ],
 
@@ -74,6 +76,9 @@ export default {
 </script>
 
 <style scoped>
+.all{
+    margin-top: 5vh;
+}
 img{
     height: 300px;
     
@@ -86,6 +91,7 @@ h2{
 .obory{
     margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
     gap: 15px;
@@ -128,4 +134,5 @@ a:hover{
     background: #f0f0f0;
     color: #ED1C24;
 }
+
 </style>

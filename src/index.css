@@ -3,24 +3,22 @@
   padding: 0;
   box-sizing: border-box !important;
   list-style: none;
-  color: #000;
+  /*color: #000;*/
 }
 body{
-  background: #fdfdfd;
+  background: #e8e8e8;
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
 
 }
 nav{
-  height: 12vh;
   position: sticky;
   top: 0;
   z-index: 9999;
 }
 footer{
   height: 25vh;
-  background: #fff;
 }
 h2{
   color: #ed1c24;
@@ -35,13 +33,9 @@ a{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
-.news div{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-}
+
 .news div ul{
     display: flex;
     flex-direction: column;
@@ -55,7 +49,6 @@ a{
     align-items: center;
     justify-content: space-between;
     padding-block: 5px;
-    border-left: 3px solid #ED1C24;
 }
 .date{
     display: flex;
@@ -75,13 +68,13 @@ a{
     width: 30%;
     background: #ED1C24;
     border: 3px solid #ED1C24;
-    color: #fdfdfd;
+    color: #fdfdfd !important;
     cursor: pointer;
     transition: .2s;
 }
 .more:hover{
     background: #fdfdfd;
-    color: #ED1C24;
+    color: #ED1C24 !important;
 }
 
 #app {

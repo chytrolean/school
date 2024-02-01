@@ -1,6 +1,7 @@
 import { createRouter, createRouterMatcher, createWebHistory } from "vue-router";
 import Home from '../views/home.vue';
 import Aktuality from '../views/aktuality.vue';
+import aktualitaDetail from '../views/akDetail.vue'
 import skola from '../views/skola.vue';
 import bakalari from '../views/bakalari.vue';
 import partners from '../views/partners.vue';
@@ -20,6 +21,7 @@ import nastrojar from '../views/obory/nastrojar.vue';
 import onas from '../views/onas.vue';
 import domov from '../views/domov-mladeze.vue';
 import kuchyne from '../views/kuchyne.vue';
+import kontakt from '../views/kontakt.vue';
 
 const routes = [
     {
@@ -33,9 +35,15 @@ const routes = [
         component: Studium
     },
     {
-        path: '/Aktuality',
+        path: '/aktuality',
         name: 'Aktuality',
         component: Aktuality
+    },
+    {
+        path: '/aktuality/:slug',
+        name: 'aktualitaDetail',
+        component: aktualitaDetail,
+        props: true
     },
     {
         path: '/skola',
@@ -126,6 +134,11 @@ const routes = [
         path: '/skolni-kuchyne',
         name: 'kuchyne',
         component: kuchyne
+    },
+    {
+        path: '/kontakt',
+        name: 'kontakt',
+        component: kontakt
     },
 ];
 

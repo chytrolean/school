@@ -1,11 +1,15 @@
 <template>
   <div class="btns">
-    <div class="onas">
-        <b>O NÁS</b>
-    </div>
-    <div class="kontakt">
-        <b>KONTAKT</b>
-    </div>
+    <router-link to="/onas">
+        <div class="onas">
+            <b>O NÁS</b>
+        </div>
+    </router-link>
+    <router-link to='/kontakt'>
+        <div class="kontakt">
+            <b>KONTAKT</b>
+        </div>
+    </router-link>
   </div>
 </template>
 
@@ -53,4 +57,5 @@ export default {
     background: #000;
     color: #fff;
 }
+
 </style>

@@ -111,7 +111,7 @@ export default {
                 month: 'Listopadu',
                 txt: 'Nějaká akce'
             },
-                {
+            {
                 day: 11,
                 month: 'Listopadu',
                 txt: 'Nějaká akce'
@@ -125,5 +125,15 @@ export default {
 <style scoped>
 *{
     color: #000;
+}
+.news div:not(.date){
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+li{
+        border-left: 3px solid #ED1C24;
+
 }
 </style>

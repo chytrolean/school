@@ -5,7 +5,6 @@
     <proc-k-nam />
     <kontakt />
     <nase-obory />
-    <footer></footer>
 
 
 </template>
