@@ -2,11 +2,11 @@
   <div class="news">
     <div class="aktuality">
             <ul>
-                <li class="obj" v-for="item in aktuality" :key="item.id" :id="item.id">
+                <li class="obj" v-for="item in aktuality" :key="(item.slug)" :slug="item.slug">
                     <router-link
                     class="block" 
                     :to="{name: 'aktualitaDetail', 
-                    params: {slug: item.slug, id: item.id}}"
+                    params: {slug: item.slug}}"
                      :nadpis = item.nadpis>
                         <div class="img">
                             <img :src="item.img" alt="">
@@ -20,7 +20,7 @@
                             <small class="b">{{item.year}}.</small>
                         </div>
                         <small class="ath">{{item.author}}</small>
-                        <small><router-link class="vice" :to="{name: 'aktualitaDetail',params: {slug: item.slug, id: item.id}}"> více </router-link></small>
+                        <small><router-link class="vice" :to="{name: 'aktualitaDetail',params: {slug: item.slug}}"> více </router-link></small>
                     </div>
                 </li>
             </ul>

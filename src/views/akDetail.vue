@@ -1,6 +1,6 @@
 <template>
     <div class="coint">
-       <!--<img :src="aktualita.img" alt="" class="aktImg">
+      <img :src="aktualita.img" alt="" class="aktImg">
         <div class="txt">
             <h2>{{aktualita.nadpis}}</h2>
             <div class="info">
@@ -12,10 +12,8 @@
                 <small>autor: <b>{{aktualita.author}}<b></small>
             </div>
             <p>{{aktualita.txt}}</p>
-        </div>-->
-        <h2>
-            {{aktualita}}
-        </h2>
+        </div>
+
         <footer></footer>
     </div>
 </template>
@@ -23,14 +21,20 @@
 <script>
 import akt from '../aktuality.json'
 export default {
-    data() {
-        return {
-            aktualita: akt["slug"],
+    computed : {
+        aktualita() {
+            //return Object.assign({}, akt);
+            return Object.entries(akt).find(([key, value]) => value.slug == this.slug)[1]
         }
     },
+    /*data() {
+        return {
+          // aktualita: ,
+
+        }
+    },*/
     props: ['slug'],
     mounted() {
-        console.log(typeof(aktualita))
     },
     /*created() {
       fetch(`http://localhost:3000/aktuality/${this.id}`)

@@ -42,7 +42,7 @@ const routes = [
     {
         path: '/aktuality/:slug',
         name: 'aktualitaDetail',
-        component: aktualitaDetail,
+        component: aktualitaDetail, 
         props: true
     },
     {
