@@ -1,8 +1,8 @@
 <template>
   <nav>
-    <Navbar />
+    <Navbar v-if="!$route.meta.hideNavbar"/>
   </nav>
-    <Foot />
+    <Foot v-if="!$route.meta.hideFoot"/>
   <router-view></router-view>
 </template> 
 

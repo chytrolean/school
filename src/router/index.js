@@ -22,6 +22,7 @@ import onas from '../views/onas.vue';
 import domov from '../views/domov-mladeze.vue';
 import kuchyne from '../views/kuchyne.vue';
 import kontakt from '../views/kontakt.vue';
+import admin from '../views/admin.vue'
 
 const routes = [
     {
@@ -139,6 +140,16 @@ const routes = [
         path: '/kontakt',
         name: 'kontakt',
         component: kontakt
+    },
+    {
+        path: '/admin',
+        name: 'admin',
+        component: admin,
+        meta: {
+            hideNavbar: true,
+            hideFoot: true
+           }
+
     },
 ];
 

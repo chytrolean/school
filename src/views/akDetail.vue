@@ -23,26 +23,15 @@ import akt from '../aktuality.json'
 export default {
     computed : {
         aktualita() {
-            //return Object.assign({}, akt);
-            return Object.entries(akt).find(([key, value]) => value.slug == this.slug)[1]
+            return Object.entries(akt).find(([key, value]) => value.slug === this.slug)[1]
         }
     },
-    /*data() {
-        return {
-          // aktualita: ,
 
-        }
-    },*/
     props: ['slug'],
     mounted() {
+
+
     },
-    /*created() {
-      fetch(`http://localhost:3000/aktuality/${this.id}`)
-        .then((res) => res.json())
-        .then((akt) => {
-          this.akt = aktuality;
-        });
-    }*/
 
 
 }
