@@ -149,8 +149,11 @@ const routes = [
             hideNavbar: true,
             hideFoot: true
            }
-
     },
+    {
+        path: '/http://localhost/REST_API/www/API/uzivatele/login',
+        redirect: '/admin'
+    }
 ];
 
 const router = createRouter({

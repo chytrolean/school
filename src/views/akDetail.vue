@@ -9,7 +9,7 @@
                     <small>{{aktualita.month}}.</small>
                 </div>
                 <small><router-link to="/aktuality">aktuality</router-link></small>
-                <small>autor: <b>{{aktualita.author}}<b></small>
+                <small>autor: <b>{{aktualita.author}}</b></small>
             </div>
             <p>{{aktualita.txt}}</p>
         </div>

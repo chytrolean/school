@@ -1,18 +1,19 @@
 {
-  "name": "school",
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build"
-  },
-  "dependencies": {
-    "bootstrap-vue": "^2.23.1",
-    "vue": "^3.4.15",
-    "vue-router": "^4.2.5",
-    "vuex-persistedstate": "^4.1.0"
-  },
-  "devDependencies": {
-    "@vue/compiler-sfc": "^3.0.4",
-    "vite": "^1.0.0-rc.13"
-  }
+    "name": "school",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "dependencies": {
+        "axios": "^1.6.7",
+        "vue": "^3.4.15",
+        "vue-router": "^4.2.5",
+        "vuex": "^4.1.0",
+        "vuex-persistedstate": "^4.1.0"
+    },
+    "devDependencies": {
+        "@vue/compiler-sfc": "^3.0.4",
+        "vite": "^1.0.0-rc.13"
+    }
 }
