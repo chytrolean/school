@@ -9,6 +9,7 @@
         <img :src="item.img" alt="">
     </li>
 </ul>
+<footer></footer>
 </template>
 
 <script>
